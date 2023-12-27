@@ -52,12 +52,12 @@ To run this project locally, follow these steps:
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/shoebk2336/Airbnb.git
-1. **Clone the Repository:**
+2. **Navigate to the Project Directory:**
    ```bash
-   git clone https://github.com/shoebk2336/Airbnb.git
-1. **Clone the Repository:**
+   cd airbnb
+3. **Install Dependencies:**
    ```bash
-   git clone https://github.com/shoebk2336/Airbnb.git
-1. **Clone the Repository:**
+   npm install
+4. **Run server:**
    ```bash
-   git clone https://github.com/shoebk2336/Airbnb.git
+   npm run dev
