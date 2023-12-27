@@ -5,7 +5,7 @@
 
 ## Overview
 
-This project is a clone of the Airbnb website built using Next.js. It utilizes Redux for state management and Mantine UI for the UI library. The application is deployed on Vercel, and you can access it [here](https://airbnb-wilp.vercel.app/).
+Welcome to the Airbnb Clone, a meticulously crafted application built with Next.js, Redux, and Mantine UI. This project is designed to offer users a seamless and intuitive experience when searching for accommodations. With a focus on simplicity and elegance, the Airbnb Clone brings key features to the forefront: and you can access it [here](https://airbnb-wilp.vercel.app/).
 
 ## Table of Contents
 
