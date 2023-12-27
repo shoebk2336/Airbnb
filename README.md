@@ -1,6 +1,6 @@
 # Airbnb Clone
 
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/airbnb-clone)
+![GitHub last commit](https://img.shields.io/github/last-commit/shoebk2336/airbnb)
 ![GitHub license](https://img.shields.io/github/license/your-username/airbnb-clone)
 
 ## Overview
@@ -32,4 +32,19 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/airbnb-clone.git
+  https://github.com/shoebk2336/Airbnb.git
+
+2. Navigate to the project directory::
+
+   ```bash
+  cd airbnb
+
+3. Install dependencies:
+
+   ```bash
+  npm install
+
+4. Run server:
+
+   ```bash
+  npm run dev
