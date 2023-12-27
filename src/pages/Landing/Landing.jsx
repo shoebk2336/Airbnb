@@ -11,7 +11,7 @@ import { MapBox } from "@/Components/Map/Map"
 import { getCenter } from "geolib"
 import { SearchResult } from "@/Components/SearchResult/SearchResult"
 
-export const Landing = () => {
+const Landing = () => {
   const dispatch = useDispatch()
   const { SearchReducer } = useSelector((store) => store)
 
@@ -59,3 +59,4 @@ export const Landing = () => {
     </>
   )
 }
+export default Landing
