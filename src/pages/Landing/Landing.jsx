@@ -1,3 +1,4 @@
+import React from 'react'
 import { DateRangePicker } from "@/Components/DatePicker/DatePicker"
 import { GuestSelector } from "@/Components/GuestSelector/GuestSelector"
 import { Navbar } from "@/Components/Navbar/Navbar"
@@ -12,37 +13,37 @@ import { getCenter } from "geolib"
 import { SearchResult } from "@/Components/SearchResult/SearchResult"
 
 const Landing = () => {
-  const dispatch = useDispatch()
-  const { SearchReducer } = useSelector((store) => store)
+const dispatch = useDispatch()
+const { SearchReducer } = useSelector((store) => store)
 
-  const ApiData = {
+const ApiData = {
     search: SearchReducer.Search,
     checkin: SearchReducer.Date[0] && DateFormat(SearchReducer.Date[0]),
     checkout: SearchReducer.Date[0] && DateFormat(SearchReducer.Date[1]),
-  }
+}
 
-  const Searchbtn = async () => {
+const Searchbtn = async () => {
     const result = await FetchData(ApiData)
     if (result) {
-      dispatch({ type: "Api", payload: result })
+    dispatch({ type: "Api", payload: result })
     }
-  }
+}
 
-  useEffect(() => {
+useEffect(() => {
     const DataForLanding = async () => {
-      const result = await FetchData()
-      if (result) {
+    const result = await FetchData()
+    if (result) {
         dispatch({ type: "Landing", payload: result })
-      }
+    }
     }
     DataForLanding()
-  }, [])
+}, [])
 
-  const MapDataLandingPage = SearchReducer?.Landing?.map((Hotel) => <HotelCard key={Hotel.id} Hotel={Hotel} />)
+const MapDataLandingPage = SearchReducer?.Landing?.map((Hotel) => <HotelCard key={Hotel.id} Hotel={Hotel} />)
 
-  return (
+return (
     <>
-      <Container size='xl' mt='30px'>
+    <Container size='xl' mt='30px'>
         <Navbar Searchbtn={Searchbtn} />
         <Space h='md' />
         <Divider />
@@ -51,12 +52,12 @@ const Landing = () => {
         <GuestSelector />
         <Space h='md' />
         {SearchReducer?.Api.length > 0 ? (
-          <SearchResult />
+        <SearchResult />
         ) : (
-          <SimpleGrid cols={{ sm: 3, base: 1 }}>{MapDataLandingPage}</SimpleGrid>
+        <SimpleGrid cols={{ sm: 3, base: 1 }}>{MapDataLandingPage}</SimpleGrid>
         )}
-      </Container>
+    </Container>
     </>
-  )
+)
 }
 export default Landing
