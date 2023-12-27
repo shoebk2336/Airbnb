@@ -1,7 +1,7 @@
 # Airbnb Clone
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/shoebk2336/airbnb)
-![GitHub license](https://img.shields.io/github/license/your-username/airbnb-clone)
+![GitHub license](https://img.shields.io/github/license/shoebk2336/airbnb)
 
 ## Overview
 
@@ -20,10 +20,30 @@ This project is a clone of the Airbnb website built using Next.js. It utilizes R
 
 ## Features
 
-- Search for accommodations with date range and guest selection.
-- Responsive UI for various screen sizes.
-- Redux for global state management.
-- Mantine UI components for styling.
+- **Search Accommodations:**
+  - Users can search for accommodations in four primary locations: Mumbai, Pune, Delhi, and Vadodara.
+
+- **Date Range Selection:**
+  - Users can select the check-in and checkout dates from a calendar in a range format.
+
+- **Guest Selection:**
+  - Users can specify the number of adults, children, infants, and pets for accommodation.
+
+- **Search and View Results:**
+  - After specifying search criteria, users can click on the search button, and the relevant results will be displayed.
+
+- **Interactive Map Display:**
+  - The search results include an interactive map that shows the locations of hotels in the selected city.
+
+- **Responsive UI:**
+  - The application features a responsive user interface for various screen sizes.
+
+- **Global State Management:**
+  - Redux is used for global state management to efficiently manage application state.
+
+- **Mantine UI Components:**
+  - Mantine UI components are employed for styling, providing a consistent and visually appealing user experience.
+
 
 ## Installation
 
