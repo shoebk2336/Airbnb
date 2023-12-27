@@ -1,7 +1,7 @@
 import { DateRangePicker } from '@/Components/DatePicker/DatePicker'
 import { GuestSelector } from '@/Components/GuestSelector/GuestSelector'
 import { Navbar } from '@/Components/Navbar/Navbar'
-import { Box, Container, Divider, Flex, SimpleGrid, Space, Title } from '@mantine/core'
+import { Box, Container, Divider, Flex, SimpleGrid, Space, Title,useViewportSize } from '@mantine/core'
 import { useDispatch, useSelector } from 'react-redux'
 import { FetchData } from '@/utils/Fetch/DataFetch'
 import { useEffect, useState } from 'react'
@@ -11,7 +11,9 @@ import {  MapBox } from '@/Components/Map/Map'
 import { getCenter } from 'geolib'
 import { SearchResult } from '@/Components/SearchResult/SearchResult'
 
+
 export const Landing = () => {
+
 const dispatch=useDispatch()
 const { SearchReducer } = useSelector(store => store)
 console.log(SearchReducer)

@@ -2,7 +2,7 @@
 
 export const FetchData=async(props)=> {
 
-    const url=props?`http://localhost:3004/hotels?q=${props?.search}`:'http://localhost:3004/hotels'
+    const url=props?`https://airbnb-gxtx.onrender.com/hotels?q=${props?.search}`:'https://airbnb-gxtx.onrender.com/hotels'
     
     const data = await fetch(url);
     const res = await data.json();

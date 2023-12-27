@@ -8,7 +8,7 @@ export const MapBox = ({ Data }) => {
     const [MapCenter, setMapCenter] = useState({
         longitude: 77.20,
         latitude: 28.60,
-        zoom: 11,
+        zoom: 1,
     });
     console.log(MapCenter)
 
@@ -22,7 +22,7 @@ useEffect(() => {
     setMapCenter({
         longitude: Center.longitude,
         latitude: Center.latitude,
-        zoom: 11, 
+        zoom: 1, 
     });
     }
 }, [Data]);
@@ -30,7 +30,7 @@ useEffect(() => {
 const viewport = {
     longitude: MapCenter.longitude,
     latitude: MapCenter.latitude,
-    zoom: 11,
+    zoom: 6,
 };
 
 return (
