@@ -16,7 +16,6 @@ export const Landing = () => {
 
 const dispatch=useDispatch()
 const { SearchReducer } = useSelector(store => store)
-console.log(SearchReducer)
 
 
 const ApiData={
@@ -24,7 +23,6 @@ const ApiData={
     checkin:SearchReducer.Date[0]&&DateFormat(SearchReducer.Date[0]),
     checkout:SearchReducer.Date[0]&&DateFormat(SearchReducer.Date[1]),
 }
-// console.log(ApiData,'apidata')
 
     const Searchbtn=async()=>{
         const result=await FetchData(ApiData)
@@ -36,7 +34,6 @@ const ApiData={
     useEffect(()=>{
         const DataForLanding=async()=>{
             const result=await FetchData()
-            console.log(result,'fetch')
             if(result){    
                 dispatch({type:"Landing",payload:result})
             }

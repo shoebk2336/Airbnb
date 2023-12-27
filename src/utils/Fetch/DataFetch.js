@@ -6,7 +6,6 @@ export const FetchData=async(props)=> {
     
     const data = await fetch(url);
     const res = await data.json();
-    console.log(res,'res')
     return res
 }
 

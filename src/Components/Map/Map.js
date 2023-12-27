@@ -10,7 +10,6 @@ export const MapBox = ({ Data }) => {
         latitude: 28.60,
         zoom: 1,
     });
-    console.log(MapCenter)
 
 useEffect(() => {
     if (Data) {
