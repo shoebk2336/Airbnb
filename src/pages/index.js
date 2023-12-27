@@ -31,11 +31,9 @@ export default function Home() {
 
   return (
     <>
-      <Provider store={store}>
-        <MantineProvider>
+      
           <Landing />
-        </MantineProvider>
-      </Provider>
+        
     </>
   )
 }
