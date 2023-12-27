@@ -5,26 +5,26 @@ import { MapBox } from "../Map/Map"
 import { useSelector } from "react-redux"
 
 export const SearchResult = () => {
-  const { width, height } = useViewportSize()
+const { width, height } = useViewportSize()
 
-  const { SearchReducer } = useSelector((store) => store)
+const { SearchReducer } = useSelector((store) => store)
 
-  return (
+return (
     <>
-      <Box>
+    <Box>
         <Flex>
-          <SimpleGrid cols={2}>
+        <SimpleGrid cols={2}>
             {SearchReducer?.Api?.map((Hotel) => (
-              <HotelCard key={Hotel.id} Hotel={Hotel} />
+            <HotelCard key={Hotel.id} Hotel={Hotel} />
             ))}
-          </SimpleGrid>
-          {width < 900 ? null : (
+        </SimpleGrid>
+        {width < 900 ? null : (
             <Box className='mapsection' style={{ border: "0px solid red", minheight: "2000px" }} w='60%' mt='1px'>
-              <MapBox Data={SearchReducer?.Api} />
+            <MapBox Data={SearchReducer?.Api} />
             </Box>
-          )}
+        )}
         </Flex>
-      </Box>
+    </Box>
     </>
-  )
+)
 }
