@@ -1,40 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Airbnb Clone
 
-## Getting Started
+![GitHub last commit](https://img.shields.io/github/last-commit/shoebk2336/airbnb)
+![GitHub license](https://img.shields.io/github/license/shoebk2336/airbnb)
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Welcome to the Airbnb Clone, a meticulously crafted application built with Next.js, Redux, and Mantine UI. This project is designed to offer users a seamless and intuitive experience when searching for accommodations. With a focus on simplicity and elegance, the Airbnb Clone brings key features to the forefront: and you can access it [here](https://airbnb-wilp.vercel.app/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Table of Contents
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Redux State Management](#redux-state-management)
+- [Mantine UI](#mantine-ui)
+- [Contributing](#contributing)
+- [License](#license)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **Search Accommodations:**
+  - Users can search for accommodations in four primary locations: Mumbai, Pune, Delhi, and Vadodara.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Date Range Selection:**
+  - Users can select the check-in and checkout dates from a calendar in a range format.
 
-## Learn More
+- **Guest Selection:**
+  - Users can specify the number of adults, children, infants, and pets for accommodation.
 
-To learn more about Next.js, take a look at the following resources:
+- **Search and View Results:**
+  - After specifying search criteria, users can click on the search button, and the relevant results will be displayed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Interactive Map Display:**
+  - The search results include an interactive map that shows the locations of hotels in the selected city.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Responsive UI:**
+  - The application features a responsive user interface for various screen sizes.
 
-## Deploy on Vercel
+- **Global State Management:**
+  - Redux is used for global state management to efficiently manage application state.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Mantine UI Components:**
+  - Mantine UI components are employed for styling, providing a consistent and visually appealing user experience.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/shoebk2336/Airbnb.git
+2. **Navigate to the Project Directory:**
+   ```bash
+   cd airbnb
+3. **Install Dependencies:**
+   ```bash
+   npm install
+4. **Run server:**
+   ```bash
+   npm run dev
