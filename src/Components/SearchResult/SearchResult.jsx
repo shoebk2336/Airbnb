@@ -13,7 +13,7 @@ return (
     <>
     <Box>
         <Flex>
-        <SimpleGrid cols={2}>
+        <SimpleGrid cols={{sm:2,base:1}}>
             {SearchReducer?.Api?.map((Hotel) => (
             <HotelCard key={Hotel.id} Hotel={Hotel} />
             ))}
